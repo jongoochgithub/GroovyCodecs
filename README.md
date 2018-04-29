@@ -1,5 +1,8 @@
-# Mp3Sharp
-A C# native implementation of an MP3 encoder / decoder, based on LAME and Jump3r.
+# GroovyCodecs
+A set of C# native implementations of various audio codecs:
+- An MP3 encoder / decoder, based on LAME and Jump3r.
+- A G.729 encoder / decoder based on libjitsi/Atlassian code.
+- A G.711 encoder / decoder 
 
 Released under the LGPL v3.0.
 
@@ -16,4 +19,7 @@ V0.1.0 (alpha)
 - Functional MP3 encoding
 - A minimal console test app that will convert a wav file to an mp3 file
 
-NOTE: this is still alpha code, and the Mp3Sharp.dll interface is likely to change
+NOTE: this is still alpha code, and the GroovyMp3.dll interface is likely to change
+
+V0.1.1 (alpha)
+- Added G.711 and G.729 codecs
