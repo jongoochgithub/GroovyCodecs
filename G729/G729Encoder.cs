@@ -48,7 +48,7 @@ using GroovyCodecs.G729.Codec;
 
 namespace GroovyCodecs.G729
 {
-    internal class G729Encoder : Ld8k
+    public class G729Encoder : Ld8k
     {
 
         /**
@@ -78,7 +78,7 @@ namespace GroovyCodecs.G729
             codLd8k.init_coder_ld8k(); /* Initialize the coder             */
         }
 
-        public static void Fill<T>(T[] array, int start, int end, T value)
+        private static void Fill<T>(T[] array, int start, int end, T value)
         {
             for (var i = start; i < end; i++)
                 array[i] = value;
@@ -105,7 +105,7 @@ namespace GroovyCodecs.G729
          * @param sp16      input : speach short array
          * @param serial    output : serial array encoded in bits_ld8k
          */
-        public void ProcessPacket(short[] sp16, short[] serial)
+        private void ProcessPacket(short[] sp16, short[] serial)
         {
             var new_speech = codLd8k.new_speech; /* Pointer to new speech data   */
             var new_speech_offset = codLd8k.new_speech_offset;

@@ -48,7 +48,7 @@ using GroovyCodecs.G729.Codec;
 
 namespace GroovyCodecs.G729
 {
-    internal class G729Decoder : Ld8k
+    public class G729Decoder : Ld8k
     {
 
         /**
@@ -161,7 +161,7 @@ namespace GroovyCodecs.G729
          * @param serial    input : serial array encoded in bits_ld8k
          * @param sp16      output : speech short array
          */
-        public void ProcessPacket(short[] serial, short[] sp16)
+        private void ProcessPacket(short[] serial, short[] sp16)
         {
             Bits.bits2prm_ld8k(serial, 2, parm, 1);
 
