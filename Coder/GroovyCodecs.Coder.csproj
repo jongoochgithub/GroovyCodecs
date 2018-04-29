@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Types\GroovyCodecs.Types.csproj" />
+    <ProjectReference Include="..\Mp3\GroovyCodecs.Mp3.csproj" />
+    <ProjectReference Include="..\WavFile\GroovyCodecs.WavFile.csproj" />
+  </ItemGroup>
+</Project>

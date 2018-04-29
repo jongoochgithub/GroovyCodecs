@@ -4,7 +4,7 @@
 // Order the Premium Edition at https://www.tangiblesoftwaresolutions.com
 //========================================================================
 
-namespace GroovyMp3.Types
+namespace GroovyCodecs.Types
 {
     public class Mp3Version
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GroovyMp3.Types
+namespace GroovyCodecs.Types
 {
     public class AudioFormat
     {

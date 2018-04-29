@@ -1,4 +1,4 @@
-﻿namespace GroovyMp3.Types
+﻿namespace GroovyCodecs.Types
 {
     public enum MimeType
     {
