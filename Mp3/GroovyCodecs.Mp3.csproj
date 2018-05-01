@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackOnBuild>true</PackOnBuild>
-    <PackageVersion>0.1.0</PackageVersion>
+    <PackageVersion>0.1.2</PackageVersion>
     <Authors>Jon Gooch</Authors>
     <PackageProjectUrl>https://github.com/jongoochgithub/GroovyCodecs</PackageProjectUrl>
     <Description>A C# native implementation of an MP3 encoder / decoder, based on LAME and Jump3r.</Description>
@@ -13,6 +13,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Types\GroovyCodecs.Types.csproj" />
   </ItemGroup>
+    
+  <ItemGroup>
+    <PackageReference Update="NETStandard.Library" PrivateAssets="true" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
   </ItemGroup>

@@ -3,13 +3,17 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackOnBuild>true</PackOnBuild>
-    <PackageVersion>0.1.0</PackageVersion>
+    <PackageVersion>0.1.2</PackageVersion>
     <Authors>Jon Gooch</Authors>
     <PackageProjectUrl>https://github.com/jongoochgithub/GroovyCodecs</PackageProjectUrl>
     <Description>A C# native implementation of a G711 encoder / decoder, based on RedHat/JBoss/Mobius code</Description>
     <PackageId>GroovyG711</PackageId>
   </PropertyGroup>
-  
+    
+  <ItemGroup>
+    <PackageReference Update="NETStandard.Library" PrivateAssets="true" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
   </ItemGroup>
