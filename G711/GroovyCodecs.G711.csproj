@@ -8,7 +8,15 @@
     <PackageProjectUrl>https://github.com/jongoochgithub/GroovyCodecs</PackageProjectUrl>
     <Description>A C# native implementation of a G711 encoder / decoder, based on RedHat/JBoss/Mobius code</Description>
     <PackageId>GroovyG711</PackageId>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
     
   <ItemGroup>
     <PackageReference Update="NETStandard.Library" PrivateAssets="true" />
