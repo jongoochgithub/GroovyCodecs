@@ -8,7 +8,15 @@
     <PackageProjectUrl>https://github.com/jongoochgithub/GroovyCodecs</PackageProjectUrl>
     <Description>A C# native implementation of an MP3 encoder / decoder, based on LAME and Jump3r.</Description>
     <PackageId>GroovyMp3</PackageId>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <ProjectReference Include="..\Types\GroovyCodecs.Types.csproj" />
